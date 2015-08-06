@@ -58,7 +58,7 @@ Rails.application.routes.draw do
   get 'coupons/new' => 'coupons#new'
   get 'coupons/:id' => 'coupons#show', as: :coupon
   post 'coupons' => 'coupons#create'
-  post 'signup' => 'pages#new'
+  post 'signup' => 'new#new'
 
   get '/login' => 'pages#login'
   post 'login' => 'pages#create'
