@@ -1,0 +1,22 @@
+<div class="header">
+	<div class="nav">
+		<ul>
+			<li><a href="" class="active-log">Login</a></li>
+			<li><a href="/signup" class="no-active">SignUp</a></li>
+		</ul>
+	</div>
+</div>
+
+<section>
+	<div class="outter_form">
+		<h2>Login</h2>
+		<%= form_for(:session, url: login_path) do |f| %>
+
+			<%= f.email_field :email, :placeholder => "Email", class: 'input' %><br /><br />
+
+			<%= f.password_field :password, :placeholder => "Password...", class: 'input' %><br /><br />
+
+			<%= f.submit "Enter", class: "button" %>
+		<% end %>
+	</div>
+</section>

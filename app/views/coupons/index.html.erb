@@ -1,0 +1,17 @@
+<div class="coupons">
+	<div class="container">
+		<div class="row">
+			<% @coupons.each do |coupon| %>
+			<div class="item col-md-4">
+				<div class="img-container">
+					<%= image_tag coupon.image %>
+				</div>
+				<div class="album-info">
+					<h2><%= coupon.title %></h2>
+					<p><%= link_to "See Coupon", coupon_path(coupon) %></p>
+				</div>
+			</div>
+			<% end %>
+		</div>
+	</div>
+</div>
