@@ -10,5 +10,8 @@ class PagesController < ApplicationController
 		@coupon = Coupon.find(params[:id])
 		@photos = @coupon.photos
 	end
+
+	def new
+	end
 	
 end
